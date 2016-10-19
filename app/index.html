@@ -36,10 +36,10 @@
       <button class='button'>Install</button>
       <span class='tooltip'></span>
     </div>
-    <script src=/scripts/main.min.js></script>
+    <script src=scripts/main.min.js></script>
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        navigator.serviceWorker.register('/rangoli/dist/sw.js', { scope: '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
