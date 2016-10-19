@@ -28,7 +28,7 @@
         "type": "image/png",
         "sizes": "512x512"
       }],
-  "start_url": "/?homescreen=1",
+  "start_url": "/rangoli/dist/?homescreen=1",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#2196F3",

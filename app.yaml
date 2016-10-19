@@ -7,19 +7,19 @@ threadsafe: true
 default_expiration: "10s"
 
 handlers:
-- url: /manifest.json
+- url: /rangoli/manifest.json
   mime_type: application/json
   static_files: dist/manifest.json
   upload: dist/manifest.json
   http_headers:
     Access-Control-Allow-Origin: "*"
 
-- url: /
+- url: /rangoli/
   mime_type: text/html
   static_files: dist/index.html
   upload: dist/index.html
 
-- url: /(.+)
+- url: /rangoli/(.+)
   static_files: dist/\1
   upload: dist/(.+)
   http_headers:

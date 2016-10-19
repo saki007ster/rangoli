@@ -4,7 +4,7 @@
   "launch_path": "/rangoli/dist/index.html",
   "description": "A Rangoli App",
   "icons": {
-    "128": "/images/touch/icon-128x128.png"
+    "128": "images/touch/icon-128x128.png"
   },
   "developer": {
     "name": "Saket Kumar",
