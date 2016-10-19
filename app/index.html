@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang=en-GB>
+  <head>
+    <meta charset='utf-8'>
+    <title>The Rangoli App</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='description' content='An Rangoli App.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='manifest' href='manifest.json'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='Rangoli App'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='apple-mobile-web-app-title' content='Rangoli App'>
+    <link rel=icon sizes=192x192 href=/images/touch/Rangoli_192.png>
+    <link rel=apple-touch-icon href=/images/touch/Rangoli_192.png>
+    <meta name='msapplication-TileImage' content='/images/touch/Rangoli_144.png'>
+    <meta name='msapplication-TileColor' content='#2196F3'>
+    <meta name='theme-color' content='#2196F3'>
+    <meta property='og:title' content='Rangoli App'>
+    <meta property='og:type' content='website'>
+    <meta property='og:description' content='No install just use it right away in your browser!'>
+    <link rel='stylesheet' href='styles/main.css'>
+  </head>
+  <body>
+    <div id='container'>
+      <div id='rangoli'>
+        <div class='aarti'>
+          <div class='inner'>
+            <div class='center'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='installer'>
+      <button class='button'>Install</button>
+      <span class='tooltip'></span>
+    </div>
+    <script src=/scripts/main.min.js></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+    </script>
+  </body>
+</html>

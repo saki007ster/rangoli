@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Rangoli App",
+  "launch_path": "/index.html",
+  "description": "A Rangoli App",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Saket Kumar",
+    "url": "http://saki007ster.github.io"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Rangoli App",
+      "description": "Rangoli App"
+    }
+  }
+}
