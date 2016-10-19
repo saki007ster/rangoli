@@ -12,9 +12,9 @@
     <meta name='application-name' content='Rangoli App'>
     <meta name='apple-mobile-web-app-status-bar-style' content='black'>
     <meta name='apple-mobile-web-app-title' content='Rangoli App'>
-    <link rel=icon sizes=192x192 href=/images/touch/Rangoli_192.png>
-    <link rel=apple-touch-icon href=/images/touch/Rangoli_192.png>
-    <meta name='msapplication-TileImage' content='/images/touch/Rangoli_144.png'>
+    <link rel=icon sizes=192x192 href=/rangoli/dist/images/touch/Rangoli_192.png>
+    <link rel=apple-touch-icon href=/rangoli/dist/images/touch/Rangoli_192.png>
+    <meta name='msapplication-TileImage' content='/rangoli/dist/images/touch/Rangoli_144.png'>
     <meta name='msapplication-TileColor' content='#2196F3'>
     <meta name='theme-color' content='#2196F3'>
     <meta property='og:title' content='Rangoli App'>
@@ -39,7 +39,7 @@
     <script src=scripts/main.min.js></script>
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/rangoli/dist/sw.js', { scope: '/' })
+        navigator.serviceWorker.register('/rangoli/dist/sw.js', { scope: '/rangoli/dist/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
